@@ -3,8 +3,8 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className=' h-[100vh] text-white flex flex-col gap-14 items-center relative border-t border-neutral-900 rounded-tr-[80px] rounded-tl-[80px] pt-12 z-[0] bg-black'>
-            <h1 className='page-title' data-text="SERVICES">SERVICES</h1>
+        <div className=' h-[100vh] text-white flex flex-col gap-14 items-center relative border-t border-neutral-900 rounded-tr-[40px] rounded-tl-[40px] pt-12 z-[0] bg-black'>
+            <h1 className='white-gradient-text page-title ' data-text="SERVICES">SERVICES</h1>
             <div className="card-container bg-cross-lines ">
                 <div className="card ">
                     <h2>Web Design</h2>
