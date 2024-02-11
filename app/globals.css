@@ -2,32 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box !important;
+}
+body{
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 0% , #333b 1%,#222a 10%,#111a 20%,#000 40%);
+}
+html{
+  background-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.cta{
+  @apply h-[44px] bg-gradient-to-r from-violet-500 to-indigo-500 flex justify-between items-center
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn:hover{
+  @apply bg-white transition-all duration-500
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn:hover p{
+  @apply text-black 
+}
+.gradient-container-grey{
+  @apply bg-gradient-to-t from-[#222] to-neutral-600 p-[1px] rounded-full
+}
+.nav-btns{
+  @apply h-[48px] bg-neutral-900 flex gap-[4px] p-[2px] rounded-full
+}
+.nav-btn-element{
+  @apply btn border border-neutral-800  w-20 rounded-full
+}
+.nav-btn-text{
+  @apply text-white text-[0.7rem] font-semibold tracking-wide
+}
+.white-gradient{
+  padding: 20px 0px;
+  background-image: linear-gradient(to bottom, white 10%,#ccc 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
