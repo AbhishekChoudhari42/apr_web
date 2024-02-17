@@ -4,7 +4,7 @@ import Card from './Card'
 
 const Services = () => {
     return (
-        <div className='max-h-[60vh] h-[100vh] min-h-fit w-screen text-white flex flex-col gap-20 pt-4 items-center relative z-[0] bg-black'>
+        <div className='max-h-[80vh] h-[100vh] min-h-fit w-screen text-white flex flex-col gap-20 pt-4 items-center relative z-[0] bg-black'>
             <Card title={"Web Design"} imgSrc={"/temp.png"}>
             <p>
                 From stylish, contemporary designs to striking layouts,
