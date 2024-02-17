@@ -4,15 +4,15 @@ import Card from './Card'
 
 const Services = () => {
     return (
-        <div className='max-h-[80vh] h-[100vh] min-h-fit w-screen text-white flex flex-col gap-20 pt-4 items-center relative z-[0] bg-black'>
-            <Card title={"Web Design"} imgSrc={"/temp.png"}>
+        <div className='max-sm:h-[80vh] h-[100vh] min-h-fit w-screen text-white flex flex-col gap-20 pt-4 items-center relative z-[0] bg-black'>
+            <Card title={"Web Design"} imgSrc={"/temp.png"} borderColor={"green"}>
             <p>
                 From stylish, contemporary designs to striking layouts,
                 we tailor custom websites that enhance
                 your brand and achieve goals.
             </p>
             </Card>
-            <Card title={"Web Development"} imgSrc={"/temp.png"}>
+            <Card title={"Web Development"} imgSrc={"/temp.png"} borderColor={"green"}>
             <p>
                 From stylish, contemporary designs to striking layouts,
                 we tailor custom websites that enhance
