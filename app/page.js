@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Title from "./components/Title";
+import Progress from "./components/Progress";
 
 export default function Home() {
   return (
@@ -10,10 +11,8 @@ export default function Home() {
       <Hero/>
       <Title content={"SERVICES"}/>
       <Services/>
-
-        <section className="greydient h-screen w-full flex justify-between items-center text-white">
-          dfdsfds
-        </section>
+      <Title content={"PROCESS"}/>
+      <Progress/>
     </main>
   );
 }
