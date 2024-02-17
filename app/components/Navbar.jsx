@@ -25,9 +25,6 @@ const links = [
 
 const Navbar = () => {
 
-  const lenis = new Lenis()
-
-
 
   return (
     <div className='absolute top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
@@ -50,7 +47,7 @@ const Navbar = () => {
                     className='nav-btn-element cursor-pointer '
                     >
                     <p 
-                    onClick={()=>{lenis.scrollTo(`#CONTACT`,{lerp:0.1});console.log(`#${el.link}`)}}
+                    // onClick={()=>{lenis.scrollTo(`#CONTACT`,{lerp:0.1});console.log(`#${el.link}`)}}
                     className='nav-btn-text'>{el.text}</p>
                   </motion.div>
                 </Link>
