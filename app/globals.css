@@ -63,9 +63,9 @@ html{
   position: absolute;
   top: 0%;
   left: 50%;
-  transform: translate(-50%,-10%);
+  transform: translate(-50%,0%);
   color: transparent;
-  z-index: -5;
+  z-index: 10;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.123);
   @apply text-7xl font-extrabold
@@ -77,27 +77,27 @@ html{
   background-size: 20px 20px;
 }
 
-
-
 .card h2{
-  @apply mb-2 font-bold text-white
+  @apply mt-4 font-bold text-white text-center
 }
 
 .card p{
-  @apply font-light text-neutral-300 text-sm
+  @apply font-light text-neutral-300 text-sm text-center
 }
 
 .card-container{
   position: relative;
   width: 50%;
   min-width: 300px;
-  height: 150px;
+  min-height: 150px;
+  max-width: fit-content;
   min-height: fit-content;
+  margin: 2rem 0;
   padding: 1px;
   border-radius: 20px;
   background: conic-gradient(from calc(var(--angle) - 110deg),rgb(0,255,123) 0%,rgb(0,255,123) 5%,#555 5%,#555 40%,rgba(0, 255, 123) 50%);
-  box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgba(0, 255, 123, 0.151);  
-  animation: gradient-animate 20s linear infinite;
+  box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgba(0, 255, 123, 0.826);  
+  animation: gradient-animate 10s linear infinite;
 }
 
 .card-container::before{
@@ -108,7 +108,7 @@ html{
   transform: translate(-50%,-50%);
   width: calc(100% - 2px);
   height: calc(100% - 2px);
-  border-radius: 20px;
+  border-radius: 21px;
   background-color: #000;
   background-size: 20px 20px;
   background-position: -1px -1px;
@@ -117,15 +117,18 @@ html{
 
 
 .card{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: 100%;
-  height: 100%;
+  max-width: fit-content;
+  height: calc(100%);
+  min-height: fit-content;
   transform: translate(-50%,-50%);
   background-image: linear-gradient(135deg,rgba(0, 0, 0, 0.92),black);
-  border-radius: 20px;
+  border-radius: 21px;
   padding: 1rem;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
