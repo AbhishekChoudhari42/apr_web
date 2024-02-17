@@ -3,6 +3,7 @@ import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Lenis from '@studio-freight/lenis'
 const links = [
   {
     text: 'Home',
@@ -17,12 +18,17 @@ const links = [
     link: 'PORTFOLIO'
   },
   {
-    text: 'contact',
+    text: 'Contact',
     link: 'CONTACT'
   }
 ]
 
 const Navbar = () => {
+
+  const lenis = new Lenis()
+
+
+
   return (
     <div className='absolute top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
@@ -38,12 +44,17 @@ const Navbar = () => {
               return (
                 <Link className='nav-btn-element' href={`/#${el.link}`}>
                   <motion.div
+                    
                     transition={{ ease: "easeOut", duration: 2 }}
                     key={el.text}
-                    className=''>
-                    <p className='nav-btn-text'>{el.text}</p>
+                    className='nav-btn-element cursor-pointer '
+                    >
+                    <p 
+                    onClick={()=>{lenis.scrollTo(`#CONTACT`,{lerp:0.1});console.log(`#${el.link}`)}}
+                    className='nav-btn-text'>{el.text}</p>
                   </motion.div>
-                </Link>)
+                </Link>
+                )
             })
           }
 
