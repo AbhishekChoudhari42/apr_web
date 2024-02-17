@@ -12,20 +12,14 @@ const Services = () => {
                 your brand and achieve goals.
             </p>
             </Card>
-            <Card title={"Web Development"} imgSrc={"/temp.png"} borderColor={"green"}>
+            <Card title={"Web Development"} imgSrc={"/comp-icon.webp"} borderColor={"green"}>
             <p>
                 From stylish, contemporary designs to striking layouts,
                 we tailor custom websites that enhance
                 your brand and achieve goals.
             </p>
             </Card>
-            {/* <Card title={"Web Development"} >
-            <p>
-                From stylish, contemporary designs to striking layouts,
-                we tailor custom websites that enhance
-                your brand and achieve goals.
-            </p>
-            </Card> */}
+
         </div>
     )
 }
