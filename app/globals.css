@@ -82,7 +82,7 @@ html{
 }
 
 .card p{
-  @apply font-light text-neutral-300 text-sm text-center
+  @apply font-light text-neutral-300 text-sm
 }
 
 .card-container{
@@ -95,8 +95,8 @@ html{
   margin: 2rem 0;
   padding: 1px;
   border-radius: 20px;
-  background: conic-gradient(from calc(var(--angle) - 110deg),rgb(0,255,123) 0%,rgb(0,255,123) 5%,#555 5%,#555 40%,rgba(0, 255, 123) 50%);
-  box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgba(0, 255, 123, 0.826);  
+  background: conic-gradient(from calc(var(--angle) - 110deg),rgb(204, 0, 255) 0%,rgb(0,255,123) 5%,#555 5%,#555 40%,rgba(0, 255, 123) 50%);
+  box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgb(204, 0, 255);  
   animation: gradient-animate 10s linear infinite;
 }
 
