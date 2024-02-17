@@ -44,7 +44,9 @@ const Navbar = () => {
       </div>
 
 
-      <button className='cta text-xs border h-[38px]  border-neutral-950 px-[4px] text-white rounded-full'>
+      <button className='cta text-xs border h-[38px]  border-neutral-950 px-[4px] text-white rounded-full
+            max-sm:fixed max-sm:bottom-16 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] max-sm:-rotate-90 max-sm:-right-16
+      '>
         <p className='nav-btn-text ml-2'>Become a client</p>
         <div className='rounded-full w-[32px] h-[32px] border ml-2 flex justify-center items-center'>
           <FaArrowRight className='arrow' color='white' />
