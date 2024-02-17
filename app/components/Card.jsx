@@ -8,8 +8,8 @@ const ServicesCard = ({title,imgSrc,children,borderColor}) => {
         <h2 className={`${imgSrc ? 'mt-14' : 'mt-0'}`}>{title}</h2>
         {children}
     </div>
-    <div className="absolute right-[50%] top-0 translate-y-[-50%] translate-x-[50%]">
-        {imgSrc && <Image width={100} height={100} alt='icon' src={imgSrc}/>}
+    <div className="absolute p-0 rounded-[20px]   right-[50%] top-0 translate-y-[-50%] translate-x-[50%]">
+        {imgSrc && <Image className='rounded-[20px] border border-neutral-800' width={100} height={100} alt='icon' src={imgSrc}/>}
     </div>
 </div>
   )
