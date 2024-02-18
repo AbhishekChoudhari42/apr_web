@@ -35,7 +35,7 @@ const ContactForm = () => {
           required
           value={formData.name}
           onChange={handleChange}
-          className="mt-1 bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          className="mt-1  text-white bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
         />
       </div>
       <div>
@@ -47,7 +47,7 @@ const ContactForm = () => {
           required
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          className="mt-1 text-white bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
         />
       </div>
       <div>
@@ -59,7 +59,7 @@ const ContactForm = () => {
           required
           value={formData.message}
           onChange={handleChange}
-          className="mt-1 bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          className="mt-1  text-white bg-black block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
         ></textarea>
       </div>
       <button
