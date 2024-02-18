@@ -17,7 +17,7 @@ const links = [
   },
   {
     text: 'About Us',
-    link: 'ABOUTUS'
+    link: 'ABOUT US'
   },
   {
     text: 'Contact',
@@ -29,13 +29,15 @@ const Navbar = () => {
 
   const variants = {
     open: {
-      width: 192,
-      height: 292,
+      width: 168,
+      height: 242,
+      border:'1px solid #444',
       transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] }
     },
     closed: {
       width: 40,
       height: 40,
+      border:'1px solid #111',
       transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] }
     }
   }
@@ -58,7 +60,7 @@ const Navbar = () => {
         <button className='absolute  top-1 right-1 z-50 text-white' onClick={() => setIsActive((isActive) => !isActive)}>
           {isActive ? <IoMdClose size={32} /> : <IoMenu size={32} />}
         </button>
-        <div className='mt-[50px] h-full flex flex-col gap-2 '>{
+        <div className='mt-[26px] h-[168px] flex flex-col justify-evenly'>{
 
           links.map(el => {
             return (
@@ -112,9 +114,12 @@ const Navbar = () => {
 
 
       <button className='cta text-xs border h-[38px]  border-neutral-950 px-4 text-white rounded-full
-            max-sm:fixed max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] max-sm:-rotate-90 max-sm:-right-16
+            max-sm:fixed max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] 
+            max-sm:-rotate-90 max-sm:-right-14
       '>
-        <p className='nav-btn-text'>Start your project</p>
+        <Link href={"/#CONTACT"}>
+          <p className='nav-btn-text'>Start your project</p>
+        </Link>
         {/* <div className='rounded-full w-[32px] h-[32px] border ml-2 flex justify-center items-center'>
           <FaArrowRight className='arrow' color='white' />
         </div> */}

@@ -4,7 +4,7 @@ import { useScroll , motion, useTransform} from "framer-motion"
 
 const Hero = ({m1}) => {
   return (
-    <div className='h-screen w-full text-white flex justify-center items-center flex-col '>
+    <div className='h-[80vh] w-full text-white flex justify-center items-center flex-col '>
       <motion.div 
       style={{y:m1}}
       >
