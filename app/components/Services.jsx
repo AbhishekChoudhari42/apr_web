@@ -4,7 +4,7 @@ import Card from './Card'
 
 const Services = () => {
     return (
-        <div  className='h-[80vh] min-h-fit w-screen text-white flex flex-col gap-20 pt-4 items-center relative z-[0] bg-black'>
+        <div  className='min-h-fit w-screen py-4 pt-20 text-white flex flex-col gap-20 items-center relative z-[0] bg-black'>
             <Card title={"Web Design"} imgSrc={"/design-icon.webp"} borderColor={"green"}>
             <p>
                 From stylish, contemporary designs to striking layouts,
@@ -14,9 +14,9 @@ const Services = () => {
             </Card>
             <Card title={"Web Development"} imgSrc={"/comp-icon.webp"} borderColor={"green"}>
             <p>
-                From stylish, contemporary designs to striking layouts,
-                we tailor custom websites that enhance
-                your brand and achieve goals.
+            Our skilled developers transform your design into reality with 
+            pristine code and flawless functionality, guaranteeing 
+            seamless website performance.
             </p>
             </Card>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 const Progress = () => {
   return (
-    <div className='h-[120vh] max-sm:h-[140vh] min-h-fit w-screen text-white flex flex-col items-center relative z-[0] bg-black'>
+    <div className='min-h-screen py-4 w-full text-white flex flex-col items-center relative z-[0] bg-black'>
         <Card borderColor={"blue"} title="Understanding Your Vision">
             <p className='font-semibold'>
                 We listen carefully to your goals 

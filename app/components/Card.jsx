@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const ServicesCard = ({title,imgSrc,children,borderColor}) => {
+const Card = ({title,imgSrc,children,borderColor}) => {
   return (
     <div className={`card-container ${borderColor ?? borderColor}-border`}>
     <div className={`card`}>
@@ -15,4 +15,4 @@ const ServicesCard = ({title,imgSrc,children,borderColor}) => {
   )
 }
 
-export default ServicesCard
+export default Card

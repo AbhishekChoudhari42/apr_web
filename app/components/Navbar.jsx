@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='absolute top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
+    <div className='fixed z-50 top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
         Apricity
         <span className='text-teal-500 mx-[2px] text-xl'>.</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     
                     transition={{ ease: "easeOut", duration: 2 }}
                     key={el.text}
-                    className='nav-btn-element cursor-pointer '
+                    className='cursor-pointer '
                     >
                     <p 
                     // onClick={()=>{lenis.scrollTo(`#CONTACT`,{lerp:0.1});console.log(`#${el.link}`)}}
