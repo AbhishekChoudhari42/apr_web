@@ -1,9 +1,11 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Lenis from '@studio-freight/lenis'
+import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 const links = [
   {
     text: 'Home',
@@ -25,7 +27,20 @@ const links = [
 
 const Navbar = () => {
 
+  const variants = {
+    open:{
+      width:300,
+      height:500,
+      transition:{duration:0.75,ease:[0.76,0,0.24,1]}
+    },
+    closed:{
+      width:40,
+      height:40,
+      transition:{duration:0.75,ease:[0.76,0,0.24,1]}
+    }
+  }
 
+  const [isActive,setIsActive] = useState(false)
   return (
     <div className='absolute z-50 top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
@@ -33,9 +48,23 @@ const Navbar = () => {
         <span className='text-teal-500 mx-[2px] text-xl'>.</span>
         tech
       </h1>
+      {/* mobile menu */}
+      <motion.div
+        className='hidden max-sm:block  fixed top-2 right-4 z-40 bg-black border border-neutral-600 p-2 rounded-lg'
+        variants={variants}
+        animate={isActive?"open":"closed"}
+        initial="closed"
+      >
+        <button className='absolute flex justify-center items-center w-[40px] h-[40px] top-0 right-0 z-50 text-white' onClick={()=>setIsActive((isActive)=>!isActive)}>
+          {isActive ? <IoMdClose size={32}/>:<IoMenu size={32}/>}
+
+        </button>
+      </motion.div>
+
+      {/* desktop menu */}
       <div className='gradient-container-grey'>
 
-        <div className='nav-btns '>
+        <div className='nav-btns'>
           {
             links.map(el => {
               return (
