@@ -29,7 +29,7 @@ const Navbar = () => {
 
   const variants = {
     open:{
-      width:300,
+      width:292,
       height:500,
       transition:{duration:0.75,ease:[0.76,0,0.24,1]}
     },
@@ -42,7 +42,7 @@ const Navbar = () => {
 
   const [isActive,setIsActive] = useState(false)
   return (
-    <div className='absolute z-50 top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
+    <div className='absolute z-50 top-0 left-0 px-4 pt-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
         Apricity
         <span className='text-teal-500 mx-[2px] text-xl'>.</span>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </h1>
       {/* mobile menu */}
       <motion.div
-        className='hidden max-sm:block  fixed top-2 right-4 z-40 bg-black border border-neutral-600 p-2 rounded-lg'
+        className='purple-grid hidden max-sm:block  fixed top-2 right-4 z-40 backdrop-blur-lg   p-4 rounded-xl'
         variants={variants}
         animate={isActive?"open":"closed"}
         initial="closed"
