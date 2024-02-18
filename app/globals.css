@@ -106,9 +106,11 @@ html{
   background: conic-gradient(from calc(var(--angle) - 110deg),#222 0%,#222 5%,rgb(0, 255, 174) 8% , rgb(0, 255, 174) 10%,#222 15%,#222 20%);
   /* box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgba(0, 255, 174, 0.596);   */
 }
-.blue-border{
-  background: conic-gradient(from calc(var(--angle) - 110deg),rgb(158, 47, 255) 0%,rgb(158, 47, 255) 5%,#555 5%,#555 40%,rgb(158, 47, 255) 50%);
-  box-shadow: calc(sin(calc(360deg - var(--angle)))*1px) calc(cos(calc(360deg - var(--angle)))*1px) 2px rgba(158, 47, 255, 0.489);  
+.purple-border{
+  background: conic-gradient(from calc(var(--angle) - 110deg),#222 0%,#222 5%,rgb(158, 47, 255) 8% , rgb(158, 47, 255) 10%,#222 15%,#222 20%);
+}
+.white-border{
+  background: conic-gradient(from calc(var(--angle) - 110deg),#222 0%,#222 5%,#fff 8% , #fff 10%,#222 15%,#222 20%);
 }
 .card-container::before{
   content: " ";
@@ -131,7 +133,7 @@ html{
   top: 0%;
   left: 50%;
   width: 100%;
-  height: inherit;
+  height: 100%;
   min-height: fit-content;
   transform: translate(-50%,-0%);
   background-image: linear-gradient(135deg,rgba(0, 0, 0, 0.92),black);
