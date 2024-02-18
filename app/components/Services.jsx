@@ -4,7 +4,7 @@ import Card from './Card'
 
 const Services = () => {
     return (
-        <div  className='min-h-fit w-screen py-4 pt-20 text-white flex flex-col gap-20 items-center relative z-[0] bg-black'>
+        <div  className='min-h-fit w-screen py-8 pt-20 text-white flex flex-col gap-20 items-center relative z-[0] bg-black'>
             <Card title={"Web Design"} imgSrc={"/design-icon.webp"} borderColor={"green"}>
             <p>
                 From stylish, contemporary designs to striking layouts,

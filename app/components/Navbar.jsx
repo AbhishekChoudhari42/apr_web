@@ -14,8 +14,8 @@ const links = [
     link: 'SERVICES'
   },
   {
-    text: 'Portfolio',
-    link: 'PORTFOLIO'
+    text: 'About Us',
+    link: 'ABOUTUS'
   },
   {
     text: 'Contact',
@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed z-50 top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
+    <div className='absolute z-50 top-0 left-0 px-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
         Apricity
         <span className='text-teal-500 mx-[2px] text-xl'>.</span>
@@ -39,16 +39,15 @@ const Navbar = () => {
           {
             links.map(el => {
               return (
-                <Link className='nav-btn-element' href={`/#${el.link}`}>
+                <Link key={el.text} className='nav-btn-element' href={`/#${el.link}`}>
                   <motion.div
-                    
                     transition={{ ease: "easeOut", duration: 2 }}
-                    key={el.text}
+                    
                     className='cursor-pointer '
-                    >
-                    <p 
-                    // onClick={()=>{lenis.scrollTo(`#CONTACT`,{lerp:0.1});console.log(`#${el.link}`)}}
-                    className='nav-btn-text'>{el.text}</p>
+                  >
+                    <p className='nav-btn-text'>
+                      {el.text}
+                    </p>
                   </motion.div>
                 </Link>
                 )
@@ -63,7 +62,7 @@ const Navbar = () => {
       <button className='cta text-xs border h-[38px]  border-neutral-950 px-[4px] text-white rounded-full
             max-sm:fixed max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] max-sm:-rotate-90 max-sm:-right-16
       '>
-        <p className='nav-btn-text ml-2'>Become a client</p>
+        <p className='nav-btn-text ml-2'>Start your project</p>
         <div className='rounded-full w-[32px] h-[32px] border ml-2 flex justify-center items-center'>
           <FaArrowRight className='arrow' color='white' />
         </div>
