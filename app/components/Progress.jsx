@@ -3,14 +3,14 @@ import Card from './Card'
 const Progress = () => {
   return (
     <div className='min-h-screen py-4 w-full text-white flex flex-col items-center relative z-[0] bg-black'>
-        <Card borderColor={"purple"} title="Understanding Your Vision">
+        <Card borderColor={"white"} title="Understanding Your Vision">
             <p className='font-semibold'>
                 We listen carefully to your goals 
                 and vision for the project.
             </p>
         </Card>
         <div className='line'> </div>
-        <Card borderColor={"purple"} title="Planning, Brainstorming, and Research">
+        <Card borderColor={"white"} title="Planning, Brainstorming, and Research">
             <p className='font-semibold'>
             We strategize, brainstorm ideas, and conduct
             thorough research to ensure alignment with 
@@ -18,7 +18,7 @@ const Progress = () => {
             </p>
         </Card>
         <div className='line'> </div>
-        <Card borderColor={"purple"} title="Design and Development">
+        <Card borderColor={"white"} title="Design and Development">
             <p className='font-semibold'>
             Our team brings your vision to life through creative design 
             and development, prioritizing user experience and 

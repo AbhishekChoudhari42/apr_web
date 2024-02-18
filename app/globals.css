@@ -110,7 +110,7 @@ html{
   background: conic-gradient(from calc(var(--angle) - 110deg),#222 0%,#222 5%,rgb(158, 47, 255) 8% , rgb(158, 47, 255) 10%,#222 15%,#222 20%);
 }
 .white-border{
-  background: conic-gradient(from calc(var(--angle) - 110deg),#222 0%,#222 5%,#fff 8% , #fff 10%,#222 15%,#222 20%);
+  background: conic-gradient(from calc(-1 * var(--angle)),#222 0%,#222 5%,#fff 8% , #fff 10%,#222 15%,#222 20%);
 }
 .card-container::before{
   content: " ";
