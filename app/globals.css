@@ -131,7 +131,7 @@ html{
   background-position: -1px -1px;
   background-size: 42px 42px;
   border: #3e3e3e;
-  background-image:  linear-gradient(#bb00ff31 1px, transparent 1px), linear-gradient(to right, #9000ff32 1px, #e5e5f700 1px);
+  background-image:  linear-gradient(#bb00ff0f 1px, transparent 1px), linear-gradient(to right, #bb00ff0f 1px, #e5e5f700 1px);
 }
 
 .card{

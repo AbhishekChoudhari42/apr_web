@@ -16,8 +16,7 @@ export default function Home() {
     target:container.current,
     offset:['start end','end start']
   })
-  const m1 = useTransform(scrollYProgress,[0,0.5],[-300,300])
-  const m2 = useTransform(scrollYProgress,[0,1],[-50,50])
+  const m1 = useTransform(scrollYProgress,[0,0.5],[170,-300])
   
 
   return (
@@ -27,15 +26,11 @@ export default function Home() {
 
       </motion.div> */}
 
-      <motion.div  style={{y:m1}}>
-        <Hero/>
-      </motion.div>
+        <Hero m1={m1}/>
 
      
-      <motion.div style={{y:m2}}>
       <Title content={"SERVICES"}/>
       <Services/>
-      </motion.div>
       <Title content={"PROCESS"}/>
       <Progress/>
       <Title content={"ABOUT US"}/>
