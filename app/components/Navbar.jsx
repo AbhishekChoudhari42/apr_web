@@ -70,8 +70,8 @@ const Navbar = () => {
         animate={isActive ? "open" : "closed"}
         initial="closed"
       >
-        <button className='absolute  top-1 right-1 z-50 text-white' onClick={() => setIsActive((isActive) => !isActive)}>
-          {isActive ? <IoMdClose size={32} /> : <IoMenu size={32} />}
+        <button className='absolute top-1 right-1  z-50 text-white' onClick={() => setIsActive((isActive) => !isActive)}>
+          {isActive ? <IoMdClose size={30} /> : <IoMenu size={30} />}
         </button>
         <div className='mt-[26px] h-[168px] flex flex-col justify-evenly'>{
 
