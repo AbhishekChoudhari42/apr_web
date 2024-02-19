@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main ref={container}  >
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         <Hero m1={m1} />
         <Title content={"SERVICES"} />
         <Services />
@@ -33,7 +33,7 @@ export default function Home() {
         <About />
         <Title content={"CONTACT"} />
         <ContactForm/>
-      </ReactLenis>
+      {/* </ReactLenis> */}
     </main>
   );
 }
