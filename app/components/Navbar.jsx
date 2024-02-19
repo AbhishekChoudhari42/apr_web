@@ -42,6 +42,19 @@ const Navbar = () => {
     }
   }
 
+  const variantsPara = {
+    open: {
+      opacity:0,
+      x:120,
+      transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] }
+    },
+    closed: {
+      opacity:1,
+      x:0,
+      transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] }
+    }
+  }
+
   const [isActive, setIsActive] = useState(false)
   return (
     <div className='absolute z-50 top-0 left-0 px-4 pt-4 w-full flex justify-between items-center py-2'>
@@ -76,9 +89,12 @@ const Navbar = () => {
                   transition={{ ease: "easeOut", duration: 2 ,delay:2}}
                   className='cursor-pointer '
                 >
-                  <p className='text-lg text-white'>
+                  <motion.p 
+                  variants={variantsPara}
+                  animate={isActive ? "closed" : "open"}
+                  className='text-lg text-white transition-all duration-500'>
                     {el.text}
-                  </p>
+                  </motion.p>
                 </motion.div>
               </Link>
             )
@@ -114,15 +130,12 @@ const Navbar = () => {
 
 
       <button className='cta text-xs border h-[38px]  border-neutral-950 px-4 text-white rounded-full
-            max-sm:fixed max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] 
-            max-sm:-rotate-90 max-sm:-right-14
+            fixed sm:right-4 sm:top-4 max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] 
+            max-sm:-rotate-90 max-sm:-right-14 
       '>
         <Link href={"/#CONTACT"}>
           <p className='nav-btn-text'>Start your project</p>
         </Link>
-        {/* <div className='rounded-full w-[32px] h-[32px] border ml-2 flex justify-center items-center'>
-          <FaArrowRight className='arrow' color='white' />
-        </div> */}
       </button>
 
     </div>
