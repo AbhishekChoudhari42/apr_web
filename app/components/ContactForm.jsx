@@ -1,7 +1,7 @@
 const ContactForm = () => {
 
   return (
-    <div className='w-full h-[80vh] flex justify-center items-center max-sm:px-10 '>
+    <div className='w-full min-h-fit pb-16 flex justify-center items-center max-sm:px-10 '>
 
       <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4 max-w-[400px] w-full ">
         
