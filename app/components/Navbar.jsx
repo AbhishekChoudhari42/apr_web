@@ -60,8 +60,6 @@ const Navbar = () => {
     <div className='absolute z-50 top-0 left-0 px-4 pt-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
       PixlCraft
-        <span className='text-teal-500 mx-[2px] text-xl'>.</span>
-        tech
       </h1>
       {/* mobile menu */}
       <motion.div
@@ -107,7 +105,7 @@ const Navbar = () => {
       {/* desktop menu */}
       <div className='gradient-container-grey'>
 
-        <div className='nav-btns mt-2'>
+        <div className='nav-btns'>
           {
             links.map(el => {
               return (
@@ -130,7 +128,7 @@ const Navbar = () => {
 
 
       <button className='cta text-xs border h-[38px]  border-neutral-950 px-4 text-white rounded-full
-            fixed sm:right-4 sm:top-4 max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] 
+            fixed sm:right-4 sm:top-2 max-sm:bottom-24 z-50 max-sm:rounded-bl-none max-sm:rounded-br-none max-sm:rounded-[20px] 
             max-sm:-rotate-90 max-sm:-right-14 
       '>
         <Link href={"/#CONTACT"}>
