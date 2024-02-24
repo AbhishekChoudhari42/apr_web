@@ -63,7 +63,7 @@ const Navbar = () => {
       </h1>
       {/* mobile menu */}
       <motion.div
-        className='purple-grid hidden max-sm:block  fixed top-2 right-4 z-40 backdrop-blur-lg p-4 rounded-xl overflow-hidden'
+        className='purple-grid hidden max-sm:block  fixed top-[11px] right-4 z-40 backdrop-blur-lg p-4 rounded-xl overflow-hidden'
         variants={variants}
         animate={isActive ? "open" : "closed"}
         initial="closed"
@@ -71,7 +71,7 @@ const Navbar = () => {
         <button className='absolute top-1 right-1  z-50 text-white' onClick={() => setIsActive((isActive) => !isActive)}>
           {isActive ? <IoMdClose size={30} /> : <IoMenu size={30} />}
         </button>
-        <div className='mt-[26px] h-[168px] flex flex-col justify-evenly'>{
+        <div className='mt-[20px] h-[168px] flex flex-col justify-evenly'>{
 
           links.map(el => {
             return (

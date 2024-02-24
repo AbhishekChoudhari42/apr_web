@@ -11,7 +11,7 @@ const Hero = () => {
        transition={{duration:0.5}}
       >
         <h1 
-        className='white-gradient-text font-bold text-center text-5xl leading-[3.5rem] max-sm:text-2xl lg:text-6xl lg:leading-[4.5rem]'>
+        className='white-gradient-text font-bold text-center text-5xl leading-[3.5rem] max-sm:leading-9 max-sm:text-[1.6rem] lg:text-6xl lg:leading-[4.5rem]'>
           Transform your Ideas <br/> 
           into Digital Masterpieces
         </h1>
