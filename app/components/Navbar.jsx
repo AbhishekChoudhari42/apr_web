@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <div className='absolute z-50 top-0 left-0 px-4 pt-4 w-full flex justify-between items-center py-2'>
       <h1 className='text-white font-extrabold text-lg'>
-        Apricity
+      PixlCraft
         <span className='text-teal-500 mx-[2px] text-xl'>.</span>
         tech
       </h1>
