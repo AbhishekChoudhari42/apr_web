@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <p className='about-us w-full md:px-28 max-sm:px-4 pt-10 pb-20 min-h-fit font-[400] max-sm:text-xl text-xl text-neutral-300'>
+    <p className='about-us w-full  md:px-28 max-sm:leading-[3rem] max-sm:px-4 pt-10 pb-20 h-fit min-h-[80vh] sm:text-2xl sm:leading-[4rem] font-[400] max-sm:text-xl text-xl text-neutral-300'>
         We are an agency based in Pune, India, stepping into the web design and development arena with fresh enthusiasm and innovative ideas. 
         Our journey is just beginning, and we're eager to embrace challenges, learn, and grow alongside our clients. 
         Specializing in web design and development, we're committed to turning bold visions into reality.

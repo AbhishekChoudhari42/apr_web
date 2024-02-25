@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "PixlCraft",
-  description: "Agency site"
+  description: "Web Design and Development agency"
 };
 
 export default function RootLayout({ children }) {
