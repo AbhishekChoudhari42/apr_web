@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link href="https://www.linkedin.com/in/pixlcraft-tech-99bb022b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <FaLinkedinIn className='hover:brightness-200' size={28} color='#aaa' />
                 </Link>
-                <Link href="/">
+                <Link href="https://www.instagram.com/pixlcraft.tech_?utm_source=qr&igsh=MXN1Y3lzbDZ0aXozaQ==">
                     <FaInstagram className='hover:brightness-200' size={28} color='#aaa' />
                 </Link>
                 <Link href="https://wa.me/+919004820390">
