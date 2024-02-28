@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
       {/* mobile menu */}
       <motion.div
-        className='purple-grid hidden max-sm:block  fixed top-[11px] right-4 z-40 backdrop-blur-lg p-4 rounded-xl overflow-hidden'
+        className='purple-grid hidden max-sm:block  fixed top-[1.5] right-4 z-40 backdrop-blur-lg p-4 rounded-xl overflow-hidden'
         variants={variants}
         animate={isActive ? "open" : "closed"}
         initial="closed"
