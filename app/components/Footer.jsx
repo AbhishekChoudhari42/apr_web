@@ -12,7 +12,7 @@ const Footer = () => {
                 <Link href="https://x.com/PixlCraft_tech?t=-bAYQ30ZJJQLiAPuO1ZFpA&s=08">
                     <FaXTwitter className='hover:brightness-200' size={24} color='#aaa' />
                 </Link>
-                <Link href="https://www.linkedin.com/in/pixlcraft-tech-99bb022b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <Link href="https://www.linkedin.com/company/pixlcraftstudio/about/">
                     <FaLinkedinIn className='hover:brightness-200' size={28} color='#aaa' />
                 </Link>
                 <Link href="https://www.instagram.com/pixlcraft.tech_?utm_source=qr&igsh=MXN1Y3lzbDZ0aXozaQ==">
