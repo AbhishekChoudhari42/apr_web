@@ -1,9 +1,12 @@
+import Link from "next/link"
+import { FaWhatsapp } from "react-icons/fa"
+
 const ContactForm = () => {
 
   return (
     <div className='w-full min-h-fit pb-16 flex justify-center items-center max-sm:px-10 '>
 
-      <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4 max-w-[400px] w-full ">
+      <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4 max-w-[400px] w-full flex flex-col">
         
         <input type="hidden" name="access_key" value="7e990d6d-fe6e-4fb0-9bf4-7b15b050e052"/>
 
@@ -35,6 +38,12 @@ const ContactForm = () => {
           Send
         </button>
         <input type="hidden" name="redirect" value="https://web3forms.com/success"></input>
+        <Link 
+          className="text-green-950 bg-green-400 hover:bg-green-500 w-full  focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-4 flex justify-center items-center gap-2"
+          href={"https://wa.me/+919004820390"}>
+          Connect on Whatsapp
+          <FaWhatsapp className='hover:brightness-200' size={20} color='#040' />
+        </Link>
       </form>
     </div>
 
