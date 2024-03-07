@@ -213,3 +213,18 @@ main{
   font-family: 'OCR';
 }
 
+
+.bg-grad{
+  background-image: linear-gradient(to right,rgb(190, 27, 255),rgb(0, 132, 255));
+}
+
+.scroll-progress{
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0px;
+  height: 2px;
+  width: 100vw;
+  background-color: blueviolet;
+  
+}

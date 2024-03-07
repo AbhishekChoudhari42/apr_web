@@ -13,10 +13,10 @@ const Hero = () => {
     offset:['end end','end start']
   })
 
-  const y = useTransform(scrollYProgress,[0,1],[0,-150])
+  const y = useTransform(scrollYProgress,[0,1],[50,-150])
 
   return (
-    <div ref={targetRef} className='h-[80vh] w-full text-white flex justify-center items-center flex-col bg-black'>
+    <div ref={targetRef} className='h-[90vh] w-full text-white flex justify-center items-center flex-col bg-black'>
       <motion.div
        initial={{opacity:0}}
        animate={{opacity:1}}

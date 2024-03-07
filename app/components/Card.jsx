@@ -16,9 +16,6 @@ const Card = ({title,imgSrc,children,borderColor}) => {
 
   return (
     <motion.div 
-    // initial={{opacity:0}}
-    // whileInView={{opacity:1}}
-    // transition={{duration:1}}
     style={{opacity,scale}}
     ref={targetRef}
     className={`card-container ${borderColor ?? borderColor}-border`}>

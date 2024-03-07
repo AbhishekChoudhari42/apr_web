@@ -7,8 +7,18 @@ import About from "./components/About";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { useScroll, useTransform ,motion} from "framer-motion";
 export default function Home() {
+
+  const targetRef = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target:targetRef,
+    offset:['start start','end end']
+  })
+
+  const scaleX = useTransform(scrollYProgress,[0,1],[0,1])
+
 
   useEffect(()=>{
     const lenis = new Lenis()
@@ -22,7 +32,10 @@ export default function Home() {
   },[])
 
   return (
-    <main>
+    <main ref={targetRef}>
+        
+        <motion.div className="scroll-progress" style={{scaleX,left:'0px'}}></motion.div>
+
         <Hero  />
         <Title content={"SERVICES"} />
         <Services />
