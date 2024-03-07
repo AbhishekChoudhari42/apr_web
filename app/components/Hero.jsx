@@ -8,18 +8,18 @@ const Hero = () => {
 
   const targetRef = useRef(null)
 
-  const {scrollY} = useScroll({
+  const {scrollYProgress} = useScroll({
     target:targetRef,
     offset:['end end','end start']
   })
 
-  const y = useTransform(scrollY,[0,100],[0,-50])
+  const y = useTransform(scrollYProgress,[0,1],[0,-150])
 
   return (
-    <div ref={targetRef} className='h-[80vh] w-full text-white flex justify-center items-center flex-col'>
+    <div ref={targetRef} className='h-[80vh] w-full text-white flex justify-center items-center flex-col bg-black'>
       <motion.div
-       initial={{y:-20,opacity:0}}
-       animate={{y:0,opacity:1}}
+       initial={{opacity:0}}
+       animate={{opacity:1}}
        transition={{duration:0.5}}
        style={{y}}
       >
