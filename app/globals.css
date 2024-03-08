@@ -223,7 +223,7 @@ main{
   position: fixed;
   background-color: blueviolet;
   z-index: 50;
-  animation: alt_color 4s infinite linear;
+  animation: alt_color 2s infinite linear;
 }
 
 @keyframes alt_color{
@@ -239,7 +239,7 @@ main{
 }
 
 .progress-top{
-  height: 3px;
+  height: 5px;
   top: 0;
   left: 0;
   width: 100vw;
