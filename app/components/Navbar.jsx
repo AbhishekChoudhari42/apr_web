@@ -59,7 +59,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
   return (
     <div className='absolute z-50 top-4 left-0 px-4 w-full flex justify-between items-center py-2'>
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center gap-2 ml-2'>
         <Image width={30} height={30} alt="logo" src={'/main_logo.svg'}/>
         <h1 className='text-white tracking-wide text-lg ocr-font'>
           PixlCraft

@@ -14,6 +14,7 @@ body{
 }
 html{
   background-color: black;
+  scroll-behavior: smooth;
 }
 main{
   background-color: #000;
@@ -220,11 +221,38 @@ main{
 
 .scroll-progress{
   position: fixed;
-  z-index: 50;
-  top: 0;
-  right: 0px;
-  height: 2px;
-  width: 100vw;
   background-color: blueviolet;
-  
+  z-index: 50;
+  animation: alt_color 4s infinite linear;
+}
+
+@keyframes alt_color{
+  0%{
+    background-color: blueviolet;
+  }
+  50%{
+    background-color: rgb(43, 226, 122);
+  }
+  100%{
+    background-color: blueviolet;
+  }
+}
+
+.progress-top{
+  height: 3px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.progress-bottom{
+  height: 5px;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+}
+.progress-right{
+  height: 100vw;
+  top: 0;
+  right: 0;
+  width: 5px;
 }

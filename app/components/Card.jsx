@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -9,9 +10,9 @@ const Card = ({title,imgSrc,children,borderColor}) => {
     offset:['start end','end start']
   })
 
-  const y = useTransform(scrollYProgress,[0,1],['-30%','-80%'])
+  const y = useTransform(scrollYProgress,[0,1],['-10%','-100%'])
   const opacity = useTransform(scrollYProgress,[0,0.2],[0,1])
-  const scale = useTransform(scrollYProgress,[0,0.5],[0.9,1])
+  const scale = useTransform(scrollYProgress,[0,0.4],[0.8,1])
 
 
   return (
